@@ -1,6 +1,7 @@
 
 @import "base/_variables";
 @import "modules/_site-header";
+@import "modules/_modal";
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -461,6 +462,9 @@ a {
 .wrapper--medium {
 		max-width: 976px;
 	}
+.wrapper--narrow {
+		max-width: 470px;
+	}
 .wrapper--no-padding-until-medium {
 		padding-left: 0;
 		padding-right: 0;
@@ -713,6 +717,10 @@ a {
 .section-title--blue {
 		color: darkblue;
 	}
+.section-title--less-margin {
+		margin-bottom: 1.3rem;
+		margin-top: 0;
+	}
 .section-title__icon {
 		display: block;
 		margin-left: auto;
@@ -941,4 +949,43 @@ Instead, modify gulp/templates/sprite.css */
 			padding: 12px 0;
 			background-color: transparent
 	}
+
+			.primary-nav a.is-current-link {
+				color: #fabb69;
+			}
 	}
+.reveal-item {
+	opacity: 0;
+	-webkit-transition: all 1.5s ease-out;
+	transition: all 1.5s ease-out;
+	-webkit-transform: scale(1.15);
+	        transform: scale(1.15);
+}
+.reveal-item--is-visible {
+		opacity: 1;
+	}
+.social-icons {
+	text-align: center;
+}
+.social-icons__icon {
+		background-color: orange;
+		display: inline-block;
+		margin: 0 5px 5px 5px;
+		width: 33%;
+		height: 72px;
+		position: relative;
+	}
+@media (min-width: 530px) {
+.social-icons__icon {
+			width: 72px;
+			margin: 0 5px
+	}
+	}
+.social-icons__icon .icon {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			-webkit-transform: translate(50%, 50%);
+			        transform: translate(50%, 50%);
+		}
