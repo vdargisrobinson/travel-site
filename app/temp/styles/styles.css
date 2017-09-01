@@ -664,26 +664,26 @@ a {
 	}
 /* Begin equal height rules */
 @media (min-width: 800px) {
-.row--equal-height-at-medium {
+.flexbox .row--equal-height-at-medium {
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex
 	}
 	}
-.row--equal-height-at-medium > div{
+.flexbox .row--equal-height-at-medium > div{
 			float: none;
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex;
 		}
 @media (min-width: 1010px) {
-.row--equal-height-at-large {
+.flexbox .row--equal-height-at-large {
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex
 	}
 	}
-.row--equal-height-at-large > div{
+.flexbox .row--equal-height-at-large > div{
 			float: none;
 			display: -webkit-box;
 			display: -ms-flexbox;
@@ -812,6 +812,9 @@ a {
 Instead, modify gulp/templates/sprite.css */
 .icon {
 			background-image: url('/assets/images/sprites/sprite-69f19c2e.svg');
+		}
+.no-svg .icon {
+			background-image: url('/assets/images/sprites/');
 		}
 .icon--clear-view-escapes {
 		width: 142.4px;
